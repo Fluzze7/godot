@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://bfwt0yhhkk82c"]
 
-[ext_resource type="Script" path="res://scripts/area_2d.gd" id="1_5nnm8"]
+[ext_resource type="Script" path="res://scripts/spikes.gd" id="1_5nnm8"]
 [ext_resource type="Texture2D" uid="uid://hp76lpvjoahe" path="res://assets/spritesheets/Spritesheet/trap_spike.png" id="2_snnjv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3gv3q"]
@@ -42,7 +42,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3q1hh"]
 size = Vector2(31, 12)
 
-[node name="Area2D" type="Area2D"]
+[node name="spikes" type="Area2D"]
 collision_layer = 16
 monitorable = false
 script = ExtResource("1_5nnm8")
