@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b56va6pujbsw2"
+path="res://.godot/imported/Of Far Different Nature - Ganxta (CC-BY).ogg-3488848ef248f329e9beed72893e590b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #1 (CC-BY 4.0)/Of Far Different Nature - Ganxta (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Ganxta (CC-BY).ogg-3488848ef248f329e9beed72893e590b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

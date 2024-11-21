@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://nha24akanc0h"
+path="res://.godot/imported/Of Far Different Nature - Timed (CC-BY).ogg-8fb4a4d9dd72de2cc02fdbbc05698d7b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #1 (CC-BY 4.0)/Of Far Different Nature - Timed (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Timed (CC-BY).ogg-8fb4a4d9dd72de2cc02fdbbc05698d7b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

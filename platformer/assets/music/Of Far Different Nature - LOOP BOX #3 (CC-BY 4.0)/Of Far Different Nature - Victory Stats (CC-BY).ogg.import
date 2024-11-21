@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8a34mpcv8n7e"
+path="res://.godot/imported/Of Far Different Nature - Victory Stats (CC-BY).ogg-1f3e15e472fdab06a05eb89d89208f62.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #3 (CC-BY 4.0)/Of Far Different Nature - Victory Stats (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Victory Stats (CC-BY).ogg-1f3e15e472fdab06a05eb89d89208f62.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

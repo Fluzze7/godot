@@ -1,0 +1,94 @@
+[gd_scene load_steps=8 format=3 uid="uid://dns30ugf3nosc"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_ceaxp"]
+[ext_resource type="Texture2D" uid="uid://bnmlibxfsbd5d" path="res://assets/images/bg.jpg" id="2_m3u2h"]
+[ext_resource type="StyleBox" uid="uid://bc6c7hftjubnp" path="res://styles/button_pressed.tres" id="3_oebxg"]
+[ext_resource type="StyleBox" uid="uid://chpya81id6trj" path="res://styles/button_hovered.tres" id="4_1qcns"]
+[ext_resource type="StyleBox" uid="uid://dfp3ydnvqcdb2" path="res://styles/button_normal.tres" id="5_r003y"]
+[ext_resource type="AudioStream" uid="uid://c1im1y4ucqrrb" path="res://assets/music/Of Far Different Nature - LOOP BOX #1 (CC-BY 4.0)/Of Far Different Nature - Ethnic Beat (CC-BY).ogg" id="6_dkoo8"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_0pxx8"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ceaxp")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_m3u2h")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.349
+anchor_top = 0.279
+anchor_right = 0.651
+anchor_bottom = 0.721
+offset_left = 0.451996
+offset_top = 28.708
+offset_right = -0.452026
+offset_bottom = -28.708
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover_pressed = ExtResource("3_oebxg")
+theme_override_styles/hover = ExtResource("4_1qcns")
+theme_override_styles/pressed = ExtResource("3_oebxg")
+theme_override_styles/normal = ExtResource("5_r003y")
+text = "JUGAR"
+
+[node name="Scoreboard" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover_pressed = ExtResource("3_oebxg")
+theme_override_styles/hover = ExtResource("4_1qcns")
+theme_override_styles/pressed = ExtResource("3_oebxg")
+theme_override_styles/normal = ExtResource("5_r003y")
+text = "SCOREBOARD"
+icon = SubResource("ViewportTexture_0pxx8")
+
+[node name="Settings" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover_pressed = ExtResource("3_oebxg")
+theme_override_styles/hover = ExtResource("4_1qcns")
+theme_override_styles/pressed = ExtResource("3_oebxg")
+theme_override_styles/normal = ExtResource("5_r003y")
+text = "SETTINGS"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover_pressed = ExtResource("3_oebxg")
+theme_override_styles/hover = ExtResource("4_1qcns")
+theme_override_styles/pressed = ExtResource("3_oebxg")
+theme_override_styles/normal = ExtResource("5_r003y")
+text = "QUIT"
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("6_dkoo8")
+volume_db = -7.222
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Scoreboard" to="." method="_on_scoreboard_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

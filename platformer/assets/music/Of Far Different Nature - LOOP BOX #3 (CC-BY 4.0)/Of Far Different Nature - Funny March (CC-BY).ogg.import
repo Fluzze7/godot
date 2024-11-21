@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://duww5akrd4kx5"
+path="res://.godot/imported/Of Far Different Nature - Funny March (CC-BY).ogg-64eef293e89493af4baed4472ec04460.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #3 (CC-BY 4.0)/Of Far Different Nature - Funny March (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Funny March (CC-BY).ogg-64eef293e89493af4baed4472ec04460.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

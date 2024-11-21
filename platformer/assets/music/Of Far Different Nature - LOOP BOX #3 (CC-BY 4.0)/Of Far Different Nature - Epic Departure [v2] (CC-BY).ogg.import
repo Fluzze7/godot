@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://mglw8el11je7"
+path="res://.godot/imported/Of Far Different Nature - Epic Departure [v2] (CC-BY).ogg-3b93550579a0325a586d15a51f051d25.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #3 (CC-BY 4.0)/Of Far Different Nature - Epic Departure [v2] (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Epic Departure [v2] (CC-BY).ogg-3b93550579a0325a586d15a51f051d25.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

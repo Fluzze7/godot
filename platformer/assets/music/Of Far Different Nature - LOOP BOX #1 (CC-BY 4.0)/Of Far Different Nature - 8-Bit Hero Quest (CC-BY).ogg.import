@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8fgogm1b24q7"
+path="res://.godot/imported/Of Far Different Nature - 8-Bit Hero Quest (CC-BY).ogg-7724b86006897028eda1240bc9d10534.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #1 (CC-BY 4.0)/Of Far Different Nature - 8-Bit Hero Quest (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - 8-Bit Hero Quest (CC-BY).ogg-7724b86006897028eda1240bc9d10534.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

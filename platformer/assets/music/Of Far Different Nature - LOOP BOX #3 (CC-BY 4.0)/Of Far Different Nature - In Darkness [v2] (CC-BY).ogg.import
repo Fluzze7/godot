@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://nrihbwp6fuvd"
+path="res://.godot/imported/Of Far Different Nature - In Darkness [v2] (CC-BY).ogg-839680b52f3e3b2f009beb6ec1cbc8e3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #3 (CC-BY 4.0)/Of Far Different Nature - In Darkness [v2] (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - In Darkness [v2] (CC-BY).ogg-839680b52f3e3b2f009beb6ec1cbc8e3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

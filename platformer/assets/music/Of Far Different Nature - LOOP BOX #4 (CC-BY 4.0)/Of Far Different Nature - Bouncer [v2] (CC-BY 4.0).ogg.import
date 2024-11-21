@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c3im3c7wu8arw"
+path="res://.godot/imported/Of Far Different Nature - Bouncer [v2] (CC-BY 4.0).ogg-8d341d70845a3b904771b13655c2eb0f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #4 (CC-BY 4.0)/Of Far Different Nature - Bouncer [v2] (CC-BY 4.0).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Bouncer [v2] (CC-BY 4.0).ogg-8d341d70845a3b904771b13655c2eb0f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

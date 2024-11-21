@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b0dp1yetvdgrt"
+path="res://.godot/imported/Of Far Different Nature - Intervals [v2] (CC-BY 4.0).ogg-b05ac2206c7b57e63d18485974364434.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #4 (CC-BY 4.0)/Of Far Different Nature - Intervals [v2] (CC-BY 4.0).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Intervals [v2] (CC-BY 4.0).ogg-b05ac2206c7b57e63d18485974364434.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

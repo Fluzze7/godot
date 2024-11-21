@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5r8vi1fv748q"
+path="res://.godot/imported/Of Far Different Nature - Eastern Treasures (CC-BY).ogg-78aa3c4ee822a4832cdceeb9eb58d71a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #3 (CC-BY 4.0)/Of Far Different Nature - Eastern Treasures (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Eastern Treasures (CC-BY).ogg-78aa3c4ee822a4832cdceeb9eb58d71a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

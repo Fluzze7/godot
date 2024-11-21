@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bjp0gtbnltn5h"
+path="res://.godot/imported/Of Far Different Nature - Obscurium (CC-BY).ogg-8fbb358a7ada01dc9d6c52fac8495961.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #3 (CC-BY 4.0)/Of Far Different Nature - Obscurium (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Obscurium (CC-BY).ogg-8fbb358a7ada01dc9d6c52fac8495961.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
