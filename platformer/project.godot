@@ -11,17 +11,21 @@ config_version=5
 [application]
 
 config/name="platformer"
-run/main_scene="res://scenes/menu.tscn"
+run/main_scene="res://scenes/tutorial.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-run/max_fps=120
+run/max_fps=60
 config/icon="res://icon.svg"
+
+[autoload]
+
+GLOBAL="*res://scripts/global.gd"
 
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
-window/size/mode=3
 window/stretch/mode="viewport"
+window/delta_smoothing=false
 
 [layer_names]
 

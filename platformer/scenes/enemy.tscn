@@ -1,9 +1,8 @@
-[gd_scene load_steps=35 format=3 uid="uid://bogfp4sexpbro"]
+[gd_scene load_steps=30 format=3 uid="uid://bogfp4sexpbro"]
 
-[ext_resource type="Script" path="res://enemy.gd" id="1_mt7he"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_mt7he"]
 [ext_resource type="Texture2D" uid="uid://x0wawgikdphg" path="res://assets/spritesheets/Spritesheet/character_enemy_sandbug_death.png" id="2_ijqng"]
 [ext_resource type="Texture2D" uid="uid://bmyv6sd6f6m22" path="res://assets/spritesheets/Spritesheet/vfx_effect_consume.png" id="3_yqf04"]
-[ext_resource type="Texture2D" uid="uid://lwtryoy7io13" path="res://assets/spritesheets/Spritesheet/character_enemy_sandbug_idle.png" id="4_xxhqk"]
 [ext_resource type="Texture2D" uid="uid://c7kfh2vemvhxk" path="res://assets/spritesheets/Spritesheet/character_enemy_sandbug_spawn.png" id="5_tte20"]
 [ext_resource type="Texture2D" uid="uid://coritq25u5hee" path="res://assets/spritesheets/Spritesheet/character_enemy_sandbug_walk.png" id="6_cd5gt"]
 
@@ -42,22 +41,6 @@ region = Rect2(96, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_8uxb3"]
 atlas = ExtResource("3_yqf04")
 region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_naj28"]
-atlas = ExtResource("4_xxhqk")
-region = Rect2(0, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5a5in"]
-atlas = ExtResource("4_xxhqk")
-region = Rect2(48, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sn24p"]
-atlas = ExtResource("4_xxhqk")
-region = Rect2(96, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6s6ao"]
-atlas = ExtResource("4_xxhqk")
-region = Rect2(144, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iqldr"]
 atlas = ExtResource("5_tte20")
@@ -143,23 +126,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_naj28")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5a5in")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sn24p")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6s6ao")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 8.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_iqldr")
 }, {
 "duration": 1.0,
@@ -209,7 +175,7 @@ animations = [{
 size = Vector2(5.25, 5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3q85a"]
-size = Vector2(15, 9)
+size = Vector2(14, 9)
 
 [node name="enemy" type="CharacterBody2D"]
 collision_layer = 2
@@ -218,24 +184,24 @@ platform_floor_layers = 4
 platform_wall_layers = 4
 script = ExtResource("1_mt7he")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_qs0y5")
-animation = &"death"
-autoplay = "spawn"
+animation = &"walk"
+autoplay = "walk"
 
-[node name="RayCast2D" type="RayCast2D" parent="AnimatedSprite2D"]
+[node name="RayGround" type="RayCast2D" parent="Sprite"]
 position = Vector2(10, 23)
 target_position = Vector2(0, 5)
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(10.625, 18)
+position = Vector2(9.625, 18)
 shape = SubResource("RectangleShape2D_7uc8d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 18.5)
+position = Vector2(0, 18.5)
 shape = SubResource("RectangleShape2D_3q85a")
 
-[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="animation_finished" from="Sprite" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

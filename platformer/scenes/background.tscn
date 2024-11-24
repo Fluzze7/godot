@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=3 uid="uid://dj2jkyn3fsnrq"]
+
+[ext_resource type="Texture2D" uid="uid://du4w3ycm6qy73" path="res://assets/spritesheets/Spritesheet/background.png" id="1_r6uoa"]
+
+[node name="Background" type="ParallaxBackground"]
+
+[node name="ParallaxLayer_1" type="ParallaxLayer" parent="."]
+scale = Vector2(2, 2)
+motion_scale = Vector2(0.1, 0)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer_1"]
+texture = ExtResource("1_r6uoa")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 320, 180)
+
+[node name="ParallaxLayer_2" type="ParallaxLayer" parent="."]
+scale = Vector2(2, 2)
+motion_scale = Vector2(0.2, 0)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer_2"]
+texture = ExtResource("1_r6uoa")
+centered = false
+region_enabled = true
+region_rect = Rect2(320, 0, 320, 180)
+
+[node name="ParallaxLayer_3" type="ParallaxLayer" parent="."]
+scale = Vector2(2, 2)
+motion_scale = Vector2(0.3, 0)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer_3"]
+texture = ExtResource("1_r6uoa")
+centered = false
+region_enabled = true
+region_rect = Rect2(640, 0, 320, 180)
+
+[node name="ParallaxLayer_4" type="ParallaxLayer" parent="."]
+scale = Vector2(2, 2)
+motion_scale = Vector2(0.4, 0)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer_4"]
+texture = ExtResource("1_r6uoa")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 180, 320, 180)
+
+[node name="ParallaxLayer_5" type="ParallaxLayer" parent="."]
+scale = Vector2(2, 2)
+motion_scale = Vector2(0.5, 0)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer_5"]
+texture = ExtResource("1_r6uoa")
+centered = false
+region_enabled = true
+region_rect = Rect2(320, 180, 320, 180)
+
+[node name="ParallaxLayer_6" type="ParallaxLayer" parent="."]
+scale = Vector2(2, 2)
+motion_scale = Vector2(0.5, 0)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer_6"]
+texture = ExtResource("1_r6uoa")
+centered = false
+region_enabled = true
+region_rect = Rect2(640, 180, 320, 180)

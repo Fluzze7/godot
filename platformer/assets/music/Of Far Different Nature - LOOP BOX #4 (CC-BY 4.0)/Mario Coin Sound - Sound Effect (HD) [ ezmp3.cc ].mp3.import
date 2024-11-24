@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://be20mnjpapxvh"
+path="res://.godot/imported/Mario Coin Sound - Sound Effect (HD) [ ezmp3.cc ].mp3-4ff48b14c4661b5c6f9cbcb07afb4011.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Of Far Different Nature - LOOP BOX #4 (CC-BY 4.0)/Mario Coin Sound - Sound Effect (HD) [ ezmp3.cc ].mp3"
+dest_files=["res://.godot/imported/Mario Coin Sound - Sound Effect (HD) [ ezmp3.cc ].mp3-4ff48b14c4661b5c6f9cbcb07afb4011.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

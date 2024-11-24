@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/gui.gd" id="1_58a43"]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="gui" type="CanvasLayer"]
 process_mode = 3
 script = ExtResource("1_58a43")
 
@@ -21,15 +21,16 @@ theme_override_font_sizes/font_size = 40
 text = "SCORE: 0000"
 
 [node name="GameOver" type="ColorRect" parent="."]
-visible = false
+modulate = Color(1, 1, 1, 0)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
+color = Color(1, 0, 0, 0.705882)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GameOver"]
+[node name="Container" type="VBoxContainer" parent="GameOver"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -43,7 +44,7 @@ offset_bottom = 29.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="GameOver/VBoxContainer"]
+[node name="Label" type="Label" parent="GameOver/Container"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -51,21 +52,21 @@ theme_override_font_sizes/font_size = 100
 text = "HAS MUERTO"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="GameOver/VBoxContainer"]
+[node name="Buttons" type="HBoxContainer" parent="GameOver/Container"]
 layout_mode = 2
 theme_override_constants/separation = 46
 
-[node name="Restart" type="Button" parent="GameOver/VBoxContainer/HBoxContainer"]
+[node name="Restart" type="Button" parent="GameOver/Container/Buttons"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 28
 text = "VOLVER A INTENTAR NIVEL"
 
-[node name="Quit" type="Button" parent="GameOver/VBoxContainer/HBoxContainer"]
+[node name="Quit" type="Button" parent="GameOver/Container/Buttons"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 28
 text = "SALIR DEL JUEGO"
 
 [node name="Sound" type="AudioStreamPlayer2D" parent="GameOver"]
 
-[connection signal="pressed" from="GameOver/VBoxContainer/HBoxContainer/Restart" to="." method="_on_restart_pressed"]
-[connection signal="pressed" from="GameOver/VBoxContainer/HBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="GameOver/Container/Buttons/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="GameOver/Container/Buttons/Quit" to="." method="_on_quit_pressed"]
