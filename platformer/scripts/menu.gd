@@ -3,11 +3,7 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if $Viewport:
-		if $Viewport.render_target:
-			print("Viewport está configurado correctamente.")
-		else:
-			print("Render Target no está activado en el Viewport.")
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,7 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_play_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/tutorial.tscn")
 
 
 func _on_scoreboard_pressed() -> void:

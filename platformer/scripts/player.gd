@@ -10,7 +10,7 @@ var SCORE  = 0
 
 @export_group("Motion")
 @export var speed : int = 128
-@export var gravity : int = 16
+@export var gravity : int = 0
 @export var jump : int = 368
 
 func _process(delta: float) -> void:

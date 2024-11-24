@@ -1,17 +1,27 @@
-[gd_scene format=3 uid="uid://cuhpry411wiey"]
+[gd_scene load_steps=2 format=3 uid="uid://dqa5rj5fdkfk"]
+
+[ext_resource type="Script" path="res://scripts/gui.gd" id="1_58a43"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 process_mode = 3
+script = ExtResource("1_58a43")
 
 [node name="Container" type="MarginContainer" parent="."]
-offset_right = 40.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.0
+offset_right = 48.0
 offset_bottom = 40.0
+grow_horizontal = 2
 
 [node name="Label" type="Label" parent="Container"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 40
 text = "SCORE: 0000"
 
 [node name="GameOver" type="ColorRect" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -45,11 +55,17 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_constants/separation = 46
 
-[node name="Reiniciar" type="Button" parent="GameOver/VBoxContainer/HBoxContainer"]
+[node name="Restart" type="Button" parent="GameOver/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 28
 text = "VOLVER A INTENTAR NIVEL"
 
-[node name="Salir" type="Button" parent="GameOver/VBoxContainer/HBoxContainer"]
+[node name="Quit" type="Button" parent="GameOver/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 28
 text = "SALIR DEL JUEGO"
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="GameOver"]
+
+[connection signal="pressed" from="GameOver/VBoxContainer/HBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="GameOver/VBoxContainer/HBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -188,9 +188,6 @@ collision_mask = 31
 platform_floor_layers = 4
 platform_wall_layers = 4
 script = ExtResource("1_jhtkh")
-speed = null
-gravity = null
-jump = null
 
 [node name="Animations" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_60h4f")
@@ -198,7 +195,7 @@ animation = &"run"
 autoplay = "idle"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
-position = Vector2(0, 11)
+position = Vector2(0, 7.5)
 shape = SubResource("CapsuleShape2D_kffgj")
 
 [node name="HitPoint" type="Area2D" parent="."]
@@ -206,7 +203,7 @@ collision_mask = 2
 monitorable = false
 
 [node name="Collision" type="CollisionShape2D" parent="HitPoint"]
-position = Vector2(0, 26.5)
+position = Vector2(0, 23)
 shape = SubResource("RectangleShape2D_yra0u")
 
 [node name="Audio" type="Node" parent="."]
