@@ -1,11 +1,12 @@
 extends Area2D
-
+var used = false
 func _on_body_entered(body: Node2D) -> void:
-	print("hola")
-	if body is Player:
+	if body.name == "player":
 		$Sprite.play("off")
 		$Sound.play()
-		GLOBAL.score += 100
+		if not used:
+			used = true
+			GLOBAL.score += 100
 
 
 func _on_sound_finished():

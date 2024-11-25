@@ -68,7 +68,7 @@ func damage_ctrl() -> void:
 
 
 func _on_hit_point_body_entered(body):
-	if body is Enemy and velocity.y >= 0:
+	if body.name == "enemy" and velocity.y >= 0:
 		$Audio/Hit.play()
 		body.damage_ctrl(1)
 		jump_ctrl(0.75)
@@ -76,5 +76,5 @@ func _on_hit_point_body_entered(body):
 
 
 func _on_sprite_animation_finished() -> void:
-	if $Animations.animation == "death":
+	if $Sprite.animation == "death":
 		gui.game_over()
