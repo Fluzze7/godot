@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dns30ugf3nosc"]
+[gd_scene load_steps=8 format=3 uid="uid://dns30ugf3nosc"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_ceaxp"]
+[ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://styles/theme_gui.theme" id="2_pcky6"]
 [ext_resource type="StyleBox" uid="uid://bc6c7hftjubnp" path="res://styles/button_pressed.tres" id="3_oebxg"]
 [ext_resource type="StyleBox" uid="uid://chpya81id6trj" path="res://styles/button_hovered.tres" id="4_1qcns"]
 [ext_resource type="StyleBox" uid="uid://dfp3ydnvqcdb2" path="res://styles/button_normal.tres" id="5_r003y"]
@@ -46,6 +47,7 @@ alignment = 1
 
 [node name="Play" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("2_pcky6")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/hover_pressed = ExtResource("3_oebxg")
 theme_override_styles/hover = ExtResource("4_1qcns")
@@ -55,6 +57,7 @@ text = "JUGAR"
 
 [node name="Scoreboard" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("2_pcky6")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/hover_pressed = ExtResource("3_oebxg")
 theme_override_styles/hover = ExtResource("4_1qcns")
@@ -65,6 +68,7 @@ icon = SubResource("ViewportTexture_0pxx8")
 
 [node name="Settings" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("2_pcky6")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/hover_pressed = ExtResource("3_oebxg")
 theme_override_styles/hover = ExtResource("4_1qcns")
@@ -74,6 +78,7 @@ text = "SETTINGS"
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("2_pcky6")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/hover_pressed = ExtResource("3_oebxg")
 theme_override_styles/hover = ExtResource("4_1qcns")
@@ -87,6 +92,36 @@ text = "QUIT"
 stream = ExtResource("6_dkoo8")
 volume_db = -7.222
 autoplay = true
+
+[node name="Popup" type="Popup" parent="."]
+title = "Username"
+initial_position = 1
+size = Vector2i(200, 200)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Popup"]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -57.0
+offset_right = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_pcky6")
+alignment = 1
+
+[node name="Label" type="Label" parent="Popup/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "USERNAME:"
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Popup/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Popup/VBoxContainer"]
+layout_mode = 2
+text = "Continue"
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Scoreboard" to="." method="_on_scoreboard_pressed"]

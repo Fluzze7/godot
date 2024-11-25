@@ -39,7 +39,7 @@ func damage_ctrl(damage : int) -> void:
 		$Sprite.play("death")
 		$CollisionShape2D.set_deferred("disabled", true)
 		gravity = 0
-		GLOBAL.score += score
+		GLOBAL.enemies += 1
 
 
 func _on_sprite_animation_finished():
