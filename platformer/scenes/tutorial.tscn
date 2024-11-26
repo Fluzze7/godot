@@ -855,9 +855,6 @@ tile_set = SubResource("TileSet_ld3fx")
 tile_map_data = PackedByteArray("AAAjAA4AAAAEAAEAAAAjAA8AAAAEAAQAAAAjABAAAAAEAAUAAAAkAA4AAAAFAAEAAAAkAA8AAAAFAAQAAAAkABAAAAAFAAUAAAAhAA4AAAAAAAEAAAAhAA8AAAAAAAQAAAAhABAAAAAAAAUAAAAiAA4AAAABAAEAAAAiAA8AAAABAAQAAAAiABAAAAABAAUAAAAhAA0AAAAAAAAAAAAiAA0AAAABAAAAAAAjAA0AAAAEAAAAAAAkAA0AAAAFAAAAAAAhAAwAAgAGAAEAAAAiAAwAAgAHAAEAAAD//woAAgABAAEAAAD+/woAAgAAAAEAAAAzAAoAAgAAAAcAAAA0AAoAAgABAAcAAAA1AAoAAgACAAcAAAA2AAoAAgADAAcAAAA3AAoAAgAEAAcAAAA4AAoAAgAFAAcAAAA=")
 tile_set = SubResource("TileSet_ld3fx")
 
-[node name="Background" parent="." instance=ExtResource("9_r65uc")]
-visible = false
-
 [node name="player" parent="." node_paths=PackedStringArray("gui") instance=ExtResource("4_vaebk")]
 position = Vector2(50, 87)
 gui = NodePath("../gui")
@@ -867,3 +864,5 @@ gui = NodePath("../gui")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lvl_end"]
 position = Vector2(850, 168)
 shape = SubResource("RectangleShape2D_832dx")
+
+[node name="Background" parent="." instance=ExtResource("9_r65uc")]

@@ -87,7 +87,7 @@ theme = ExtResource("2_adsji")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_w28qn")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 72
 text = "HAS MUERTO"
 horizontal_alignment = 1
 
@@ -98,13 +98,13 @@ theme_override_constants/separation = 46
 [node name="Restart" type="Button" parent="GameOver/Container/Buttons"]
 layout_mode = 2
 theme = ExtResource("2_adsji")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 18
 text = "VOLVER A INTENTAR NIVEL"
 
 [node name="Quit" type="Button" parent="GameOver/Container/Buttons"]
 layout_mode = 2
 theme = ExtResource("2_adsji")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 18
 text = "SALIR DEL JUEGO"
 
 [node name="Sound" type="AudioStreamPlayer2D" parent="GameOver"]

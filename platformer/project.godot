@@ -24,6 +24,8 @@ GLOBAL="*res://scripts/global.gd"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/size/window_width_override=1280
+window/size/window_height_override=720
 window/stretch/mode="viewport"
 window/delta_smoothing=false
 
@@ -49,7 +51,10 @@ window/delta_smoothing=false
 
 textures/canvas_textures/default_texture_filter=0
 anti_aliasing/screen_space_roughness_limiter/enabled=false
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
 lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv=0
 lights_and_shadows/positional_shadow/atlas_quadrant_1_subdiv=0
 lights_and_shadows/positional_shadow/atlas_quadrant_2_subdiv=0
 lights_and_shadows/positional_shadow/atlas_quadrant_3_subdiv=0
+2d/sdf/oversize=0

@@ -2,6 +2,7 @@ extends Control
 var settings = {}
 func _ready() -> void:
 	load_settings(GLOBAL.username)
+	$VBoxContainer/volume_slider.value = (AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))+25)
 	
 func _on_confirm_pressed() -> void:
 	settings = {"username":$VBoxContainer/LineEdit.text.strip_edges(),"fullscreen":$VBoxContainer/Fullscreen_checkbox.button_pressed,"volume":$VBoxContainer/volume_slider.value,"difficulty":$VBoxContainer/TabBar.get_tab_title($VBoxContainer/TabBar.get_current_tab())}
@@ -12,10 +13,9 @@ func _on_confirm_pressed() -> void:
 	else:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 	
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"),settings["volume"]/100)
-		
+	var volume = int(settings["volume"]) - 25
 	
-	
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"),volume)
 
 
 	get_tree().change_scene_to_file(GLOBAL.prev_scene)

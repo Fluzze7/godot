@@ -3,7 +3,6 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	GLOBAL.username = ""
 	GLOBAL.lives = 3
 	
 
@@ -17,11 +16,12 @@ func _on_play_pressed() -> void:
 	print(GLOBAL.username)
 	if GLOBAL.username.is_empty():
 		$Popup.show()  
-		while(GLOBAL.username == ""):
+		while(GLOBAL.username.is_empty()):
 			await $Popup/VBoxContainer/Button.pressed
 			GLOBAL.username = $Popup/VBoxContainer/LineEdit.text.strip_edges()
 			
 		$Popup.hide()
+		
 	get_tree().change_scene_to_file("res://scenes/tutorial.tscn")
 
 

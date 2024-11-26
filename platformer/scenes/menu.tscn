@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dns30ugf3nosc"]
+[gd_scene load_steps=7 format=3 uid="uid://dns30ugf3nosc"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_ceaxp"]
 [ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://styles/theme_gui.theme" id="2_pcky6"]
@@ -6,8 +6,6 @@
 [ext_resource type="StyleBox" uid="uid://chpya81id6trj" path="res://styles/button_hovered.tres" id="4_1qcns"]
 [ext_resource type="StyleBox" uid="uid://dfp3ydnvqcdb2" path="res://styles/button_normal.tres" id="5_r003y"]
 [ext_resource type="AudioStream" uid="uid://c1im1y4ucqrrb" path="res://assets/music/Of Far Different Nature - LOOP BOX #1 (CC-BY 4.0)/Of Far Different Nature - Ethnic Beat (CC-BY).ogg" id="6_dkoo8"]
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_0pxx8"]
 
 [node name="Menu" type="Control"]
 layout_direction = 1
@@ -31,15 +29,15 @@ color = Color(0.176269, 6.17999e-05, 0.615973, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.349
-anchor_top = 0.279
-anchor_right = 0.651
-anchor_bottom = 0.721
-offset_left = 0.451996
-offset_top = 28.708
-offset_right = -0.452026
-offset_bottom = -28.708
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -135.5
+offset_top = -133.0
+offset_right = 135.5
+offset_bottom = 133.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 30
@@ -48,7 +46,8 @@ alignment = 1
 [node name="Play" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_pcky6")
-theme_override_font_sizes/font_size = 35
+theme_override_constants/h_separation = 0
+theme_override_font_sizes/font_size = 28
 theme_override_styles/hover_pressed = ExtResource("3_oebxg")
 theme_override_styles/hover = ExtResource("4_1qcns")
 theme_override_styles/pressed = ExtResource("3_oebxg")
@@ -58,18 +57,17 @@ text = "JUGAR"
 [node name="Scoreboard" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_pcky6")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 28
 theme_override_styles/hover_pressed = ExtResource("3_oebxg")
 theme_override_styles/hover = ExtResource("4_1qcns")
 theme_override_styles/pressed = ExtResource("3_oebxg")
 theme_override_styles/normal = ExtResource("5_r003y")
 text = "SCOREBOARD"
-icon = SubResource("ViewportTexture_0pxx8")
 
 [node name="Settings" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_pcky6")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 28
 theme_override_styles/hover_pressed = ExtResource("3_oebxg")
 theme_override_styles/hover = ExtResource("4_1qcns")
 theme_override_styles/pressed = ExtResource("3_oebxg")
@@ -79,7 +77,7 @@ text = "SETTINGS"
 [node name="Quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_pcky6")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 28
 theme_override_styles/hover_pressed = ExtResource("3_oebxg")
 theme_override_styles/hover = ExtResource("4_1qcns")
 theme_override_styles/pressed = ExtResource("3_oebxg")
@@ -90,7 +88,7 @@ text = "QUIT"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Audio"]
 stream = ExtResource("6_dkoo8")
-volume_db = -7.222
+volume_db = 2.0
 autoplay = true
 
 [node name="Popup" type="Popup" parent="."]
