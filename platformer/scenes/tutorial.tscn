@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://bltu6vvr3cvba"]
+[gd_scene load_steps=24 format=4 uid="uid://bltu6vvr3cvba"]
 
 [ext_resource type="Texture2D" uid="uid://c1pvh00au2r57" path="res://assets/spritesheets/Spritesheet/tilemap.png" id="1_80y0c"]
 [ext_resource type="Script" path="res://scripts/tutorial.gd" id="1_vj0cj"]
@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://bogfp4sexpbro" path="res://scenes/enemy.tscn" id="11_3d8kr"]
 [ext_resource type="Texture2D" uid="uid://bskeroneol80p" path="res://assets/spritesheets/Spritesheet/vegetation_tree_palm.png" id="11_ctec1"]
 [ext_resource type="PackedScene" uid="uid://ccw10fvlr4idu" path="res://scenes/coin.tscn" id="14_jykul"]
+[ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://styles/theme_gui.theme" id="14_tihjv"]
+[ext_resource type="FontFile" uid="uid://dbw5l7tiy4h3i" path="res://styles/NokiaCellphoneFC.ttf" id="15_jybd3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j40g1"]
 texture = ExtResource("1_80y0c")
@@ -866,5 +868,18 @@ position = Vector2(840, 117)
 shape = SubResource("RectangleShape2D_832dx")
 
 [node name="Background" parent="." instance=ExtResource("9_r65uc")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -225.0
+offset_top = 129.0
+offset_right = 33.0
+offset_bottom = 214.0
+theme = ExtResource("14_tihjv")
+theme_override_fonts/font = ExtResource("15_jybd3")
+theme_override_font_sizes/font_size = 15
+text = "[<-] [->] para moverse
+[space] para saltar
+para matar enemigo, 
+saltar encima"
 
 [connection signal="body_exited" from="lvl_end" to="." method="_on_lvl_end_body_exited"]

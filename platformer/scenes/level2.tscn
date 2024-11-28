@@ -1,7 +1,9 @@
-[gd_scene load_steps=30 format=4 uid="uid://dgkji00xfugm4"]
+[gd_scene load_steps=32 format=4 uid="uid://dgkji00xfugm4"]
 
 [ext_resource type="Script" path="res://scripts/level_2.gd" id="1_b6wim"]
+[ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://styles/theme_gui.theme" id="2_6petp"]
 [ext_resource type="PackedScene" uid="uid://dqa5rj5fdkfk" path="res://scenes/gui.tscn" id="2_s4lvo"]
+[ext_resource type="FontFile" uid="uid://dbw5l7tiy4h3i" path="res://styles/NokiaCellphoneFC.ttf" id="3_0ngxq"]
 [ext_resource type="PackedScene" uid="uid://c88qbf8yv6wo6" path="res://scenes/camera_2d.tscn" id="3_k7srn"]
 [ext_resource type="AudioStream" uid="uid://bvoppqf4ee2yc" path="res://assets/music/Of Far Different Nature - LOOP BOX #3 (CC-BY 4.0)/Of Far Different Nature - Clash (CC-BY).ogg" id="4_utl4g"]
 [ext_resource type="PackedScene" uid="uid://ccw10fvlr4idu" path="res://scenes/coin.tscn" id="5_treek"]
@@ -899,6 +901,9 @@ position = Vector2(1023, -110)
 [node name="spikes2" parent="Traps" instance=ExtResource("6_eqyos")]
 position = Vector2(0, 321)
 
+[node name="spikes72" parent="Traps" instance=ExtResource("6_eqyos")]
+position = Vector2(-33, 321)
+
 [node name="spikes3" parent="Traps" instance=ExtResource("6_eqyos")]
 position = Vector2(32, 321)
 
@@ -1223,7 +1228,7 @@ libraries = {
 autoplay = "RESET"
 
 [node name="player" parent="." node_paths=PackedStringArray("gui") instance=ExtResource("13_2cwya")]
-position = Vector2(-64, -1)
+position = Vector2(-183, 4)
 gui = NodePath("../gui")
 
 [node name="lvl_end" type="Area2D" parent="."]
@@ -1234,6 +1239,27 @@ position = Vector2(-426.515, -336.607)
 shape = SubResource("RectangleShape2D_832dx")
 
 [node name="Background" parent="." instance=ExtResource("14_3bqh5")]
+
+[node name="Label" type="Label" parent="."]
+z_index = 1
+offset_left = -350.0
+offset_top = 52.0
+offset_right = -57.0
+offset_bottom = 127.0
+theme = ExtResource("2_6petp")
+theme_override_fonts/font = ExtResource("3_0ngxq")
+theme_override_font_sizes/font_size = 30
+text = "CAMINO OCULTO"
+
+[node name="Label2" type="Label" parent="."]
+z_index = 3
+offset_left = -144.0
+offset_top = 98.0
+offset_right = -81.0
+offset_bottom = 130.0
+theme_override_fonts/font = ExtResource("3_0ngxq")
+theme_override_font_sizes/font_size = 25
+text = "<---"
 
 [connection signal="body_entered" from="enviroment/platform/platform" to="player" method="_on_platform_body_entered"]
 [connection signal="body_exited" from="enviroment/platform/platform" to="player" method="_on_platform_body_exited"]

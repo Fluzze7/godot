@@ -7,3 +7,4 @@ var lives : int
 var username : String
 var prev_scene : String
 var platform_position : Vector2
+var difficulty : int

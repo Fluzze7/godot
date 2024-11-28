@@ -10,6 +10,7 @@ func _process(_delta):
 
 
 func game_over():
+	
 	$GameOver.visible = true
 	GLOBAL.lives -=1
 	get_tree().paused = true
@@ -22,9 +23,12 @@ func game_over():
 	tween.tween_property($GameOver, "modulate", Color(1, 1, 1, 0.8), 1.0)
 	
 	$GameOver/Sound.play()
+	
 	if GLOBAL.lives == 0:
 		get_tree().paused = false
 		send_post_new_score()
+		await get_tree().create_timer(1).timeout
+		
 		get_tree().change_scene_to_file("res://scenes/menu.tscn")
 
 
@@ -46,4 +50,4 @@ func send_post_new_score():
 	add_child(http_request)
 	var body = JSON.stringify({"username": GLOBAL.username, "score": (GLOBAL.coins*100 + GLOBAL.lives * 50  + GLOBAL.enemies *150)})
 	var headers = ["Content-Type: application/json", "Client-Secret: abc"] 
-	http_request.request("http://127.0.0.1:8000/score", headers, HTTPClient.METHOD_POST, body)
+	http_request.request("http://127.0.0.1:8000/score", headers, HTTPClient.METHOD_POST,body)

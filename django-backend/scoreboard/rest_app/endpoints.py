@@ -28,7 +28,7 @@ def score(request):
 		response = []
 		for s in scores:
 			response.append({"username": s.username, "score": s.score})
+
 		return JsonResponse(response, safe=False)
 	else:
 		return JsonResponse({'error':'Unsupported HTTP method'}, status=405)
-

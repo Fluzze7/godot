@@ -6,16 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e94946af-f9a1-4202-80b0-fe219cc40620" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scenes/bomb.tscn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scenes/enemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scenes/enemy.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoreboard/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/scoreboard/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoreboard/rest_app/endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoreboard/rest_app/endpoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scenes/level2.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scenes/level2.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scenes/menu.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scenes/menu.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scenes/scoreboard.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scenes/scoreboard.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../platformer/scenes/tutorial.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scenes/tutorial.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scripts/bomb.gd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scripts/coin.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/coin.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scripts/enemy.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/enemy.gd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../platformer/scripts/global.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/global.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scripts/player.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/player.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scripts/gui.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/gui.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scripts/level_2.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/level_2.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scripts/scoreboard.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/scoreboard.gd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../platformer/scripts/settings.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/settings.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scripts/tutorial.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/tutorial.gd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,15 +46,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.manage.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Users/Admin/Desktop/pruebas/godot/django-backend/scoreboard/manage.py"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/josea/Desktop/git/Tests/godot ultima semana/godot/django-backend&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="django-backend" />
@@ -64,7 +65,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -82,7 +82,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
       </set>
     </attachedChunks>
   </component>

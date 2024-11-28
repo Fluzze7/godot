@@ -15,5 +15,7 @@ func end_run():
 	
 	GLOBAL.total_enemies += GLOBAL.enemies
 	GLOBAL.enemies = 0
+	
 	$gui.send_post_new_score()
+	await get_tree().create_timer(1).timeout
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")

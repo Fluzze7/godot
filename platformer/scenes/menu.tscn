@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dns30ugf3nosc"]
+[gd_scene load_steps=9 format=3 uid="uid://dns30ugf3nosc"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_ceaxp"]
 [ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://styles/theme_gui.theme" id="2_pcky6"]
@@ -7,6 +7,7 @@
 [ext_resource type="StyleBox" uid="uid://chpya81id6trj" path="res://styles/button_hovered.tres" id="4_1qcns"]
 [ext_resource type="StyleBox" uid="uid://dfp3ydnvqcdb2" path="res://styles/button_normal.tres" id="5_r003y"]
 [ext_resource type="AudioStream" uid="uid://c1im1y4ucqrrb" path="res://assets/music/Of Far Different Nature - LOOP BOX #1 (CC-BY 4.0)/Of Far Different Nature - Ethnic Beat (CC-BY).ogg" id="6_dkoo8"]
+[ext_resource type="FontFile" uid="uid://dbw5l7tiy4h3i" path="res://styles/NokiaCellphoneFC.ttf" id="8_6vk5s"]
 
 [node name="Menu" type="Control"]
 layout_direction = 1
@@ -106,6 +107,15 @@ autoplay = true
 title = "Username"
 initial_position = 1
 size = Vector2i(200, 200)
+theme = ExtResource("2_pcky6")
+
+[node name="ColorRect" type="ColorRect" parent="Popup"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.605336, 0.374287, 0.804432, 0.564706)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Popup"]
 anchors_preset = 13
@@ -121,6 +131,8 @@ alignment = 1
 
 [node name="Label" type="Label" parent="Popup/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_6vk5s")
 theme_override_font_sizes/font_size = 20
 text = "USERNAME:"
 horizontal_alignment = 1
