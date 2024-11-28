@@ -4,6 +4,9 @@ class_name Player
 var axis : Vector2 = Vector2.ZERO
 var death : bool = false
 
+var on_platform = false
+
+
 @export_category(" Config")
 @export_group("Required References")
 @export var gui : CanvasLayer
@@ -19,6 +22,9 @@ func _process(_delta):
 			death_ctrl()
 		false:
 			motion_ctrl()
+	if on_platform:
+		global_position += GLOBAL.platform_position
+
 
 
 func _input(event):
@@ -67,8 +73,9 @@ func damage_ctrl() -> void:
 	$Sprite.play("death")
 
 
+
 func _on_hit_point_body_entered(body):
-	if body.name == "enemy" and velocity.y >= 0:
+	if  "enemy" in body.name and velocity.y >= 0:
 		$Audio/Hit.play()
 		body.damage_ctrl(1)
 		jump_ctrl(0.75)
@@ -78,3 +85,11 @@ func _on_hit_point_body_entered(body):
 func _on_sprite_animation_finished() -> void:
 	if $Sprite.animation == "death":
 		gui.game_over()
+
+
+func _on_platform_body_entered(_body: Node2D) -> void:
+	on_platform = true
+
+
+func _on_platform_body_exited(_body: Node2D) -> void:
+	on_platform = false

@@ -725,7 +725,7 @@ terrain_set_0/terrain_0/color = Color(8.18223e-06, 0.320125, 0.871516, 1)
 sources/1 = SubResource("TileSetAtlasSource_1mkhb")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_832dx"]
-size = Vector2(64, 16)
+size = Vector2(81, 38)
 
 [node name="tutorial" type="Node2D"]
 script = ExtResource("1_vj0cj")
@@ -767,7 +767,7 @@ position = Vector2(512, 108)
 position = Vector2(749, 87)
 
 [node name="coin8" parent="Coins" instance=ExtResource("14_jykul")]
-position = Vector2(855, 137)
+position = Vector2(840, 68)
 
 [node name="Traps" type="Node" parent="."]
 
@@ -862,7 +862,9 @@ gui = NodePath("../gui")
 [node name="lvl_end" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lvl_end"]
-position = Vector2(850, 168)
+position = Vector2(840, 117)
 shape = SubResource("RectangleShape2D_832dx")
 
 [node name="Background" parent="." instance=ExtResource("9_r65uc")]
+
+[connection signal="body_exited" from="lvl_end" to="." method="_on_lvl_end_body_exited"]

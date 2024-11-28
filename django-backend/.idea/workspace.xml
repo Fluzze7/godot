@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e94946af-f9a1-4202-80b0-fe219cc40620" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../platformer/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/project.godot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scenes/collision_try.gd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scenes/gui.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scenes/gui.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scenes/menu.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scenes/menu.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scenes/settings.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scenes/settings.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scenes/bomb.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scenes/enemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scenes/enemy.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../platformer/scenes/tutorial.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scenes/tutorial.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scripts/bomb.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scripts/coin.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/coin.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scripts/enemy.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/enemy.gd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../platformer/scripts/global.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/global.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scripts/gui.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/gui.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../platformer/scripts/menu.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/menu.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scripts/player.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/player.gd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../platformer/scripts/settings.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/settings.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platformer/scripts/tutorial.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../platformer/scripts/tutorial.gd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,21 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Fluzze7"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Fluzze7&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Fluzze7/godot.git",
-    "accountId": "a920e7c2-34f4-4e28-b2a9-72136192a09a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Fluzze7/godot.git&quot;,
+    &quot;accountId&quot;: &quot;a920e7c2-34f4-4e28-b2a9-72136192a09a&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2pLwllPT7liEpeHE8fMYvocYPDa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,12 +47,38 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.manage.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Users/Admin/Desktop/pruebas/godot/django-backend"
+    "last_opened_file_path": "D:/Users/Admin/Desktop/pruebas/godot/django-backend/scoreboard/manage.py"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="django-backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scoreboard/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

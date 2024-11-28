@@ -24,13 +24,15 @@ func _process(_delta):
 
 
 func motion_ctrl() -> void:
-	$".".scale.x = direction
+	$"Sprite".scale.x = direction
+	
 	if not $Sprite/RayGround.is_colliding() or is_on_wall():
 		direction *= -1
-	
+		
 	velocity.x = direction * speed
 	velocity.y += gravity
 	move_and_slide()
+
 
 func damage_ctrl(damage : int) -> void:
 	health -= damage

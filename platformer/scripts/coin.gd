@@ -7,7 +7,7 @@ func _on_body_entered(body: Node2D) -> void:
 		if not used:
 			used = true
 			GLOBAL.coins += 1
-
+ 
 
 func _on_sound_finished():
 	queue_free()

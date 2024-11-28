@@ -3,8 +3,7 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	GLOBAL.lives = 3
-	
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -15,6 +14,8 @@ func _process(_delta: float) -> void:
 func _on_play_pressed() -> void:
 	print(GLOBAL.username)
 	if GLOBAL.username.is_empty():
+		if GLOBAL.lives == 0:
+			GLOBAL.lives = 3
 		$Popup.show()  
 		while(GLOBAL.username.is_empty()):
 			await $Popup/VBoxContainer/Button.pressed
@@ -27,7 +28,7 @@ func _on_play_pressed() -> void:
 
 
 func _on_scoreboard_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/scoreboard.tscn")
 
 
 func _on_options_pressed() -> void:

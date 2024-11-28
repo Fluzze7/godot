@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=3 uid="uid://cffaj3kcpprgm"]
+
+[ext_resource type="Script" path="res://scripts/scoreboard.gd" id="1_5ebjd"]
+[ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://styles/theme_gui.theme" id="2_w0vyr"]
+[ext_resource type="FontFile" uid="uid://dbw5l7tiy4h3i" path="res://styles/NokiaCellphoneFC.ttf" id="3_vk1lr"]
+[ext_resource type="StyleBox" uid="uid://bc6c7hftjubnp" path="res://styles/button_pressed.tres" id="4_obeiu"]
+[ext_resource type="StyleBox" uid="uid://chpya81id6trj" path="res://styles/button_hovered.tres" id="5_8ae88"]
+[ext_resource type="StyleBox" uid="uid://dfp3ydnvqcdb2" path="res://styles/button_normal.tres" id="6_mafpq"]
+
+[node name="Scoreboard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5ebjd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.29707, 0.0011097, 0.591088, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.0
+offset_top = 37.0
+offset_right = 166.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.45098)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -132.5
+offset_right = 134.5
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_w0vyr")
+theme_override_fonts/font = ExtResource("3_vk1lr")
+theme_override_font_sizes/font_size = 35
+text = "SCOREBOARD"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -31.5
+offset_top = -33.0
+offset_right = 31.5
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_w0vyr")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover_pressed = ExtResource("4_obeiu")
+theme_override_styles/hover = ExtResource("5_8ae88")
+theme_override_styles/pressed = ExtResource("4_obeiu")
+theme_override_styles/normal = ExtResource("6_mafpq")
+text = "BACK"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
